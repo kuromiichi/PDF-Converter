@@ -13,7 +13,7 @@ from PIL import Image
 
 def img_path() -> tuple[str, int]:
     """Get target path
-    
+
     This function gets the path containing the images that will be converted.
     """
     path = ""
@@ -23,7 +23,7 @@ def img_path() -> tuple[str, int]:
     if img_num == 0:
         print("No images in target directory.")
     return path, img_num
-    
+
 
 def create_list(path: str, img_num: int) -> tuple:
     """Create list of images
@@ -58,7 +58,7 @@ def first_img(path: str) -> Image:
 
 def conversion(path: str, img1: Image, img_list: list) -> None:
     """Convert images to PDF
-    
+
     This function lets the user select a name for the PDF document and calls
     the conversion method.
     """
